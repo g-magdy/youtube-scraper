@@ -17,6 +17,10 @@ TODO: gif
 TODO: make this an executable app to be downloaded
     
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+1
+<img src="screenshots/test1.jpg">
+2
+<img src="screenshots/test2.jpg">
+3
+<img src="screenshots/test3.jpg">
 

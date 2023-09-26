@@ -1,11 +1,11 @@
 import pytube, os
 from prettytable import PrettyTable
+from pytube.cli import on_progress
 
 def main():
     os.system("cls")
-    # link = "https://youtu.be/guhw4oX6jhs?si=s7PO9s8Z3wNbMM0P"
     link = input("Please paste the youtube link here: ")
-    yvideo = pytube.YouTube(url=link)
+    yvideo = pytube.YouTube(url=link, on_progress_callback=on_progress)
     yvideo.check_availability()
     print(f"\n{yvideo.title}\n")
     print("1 -> just audio\n2 -> video with no sound\n3 -> video with sound\n")
@@ -21,7 +21,7 @@ def main():
     
     print("Getting Data ..")
     if get_data(yvideo.streams, choice):
-        print("Done")
+        print(":)\nDownload complete\nFind the downloaded file in the same folder of this app.")
     else:
         print("Apologies, an error occurred")
     os.system("pause")
@@ -76,19 +76,5 @@ make the app open itself in maximized window
 I need to make much more apps than this - one per week
 '''
 
-
-
-# TODO: get audio
-# TODO: get video
 # TODO: merge the audio and video
-# TODO: onprogress
 # TODO: make it verbose or simple (choice)
-
-# audio = streams.get_audio_only()
-# video = streams.get_highest_resolution()
-# assert audio is not None
-# assert video is not None
-# print(audio.default_filename)
-# print(video.default_filename)
-# print(audio.filesize_mb)
-# print(video.filesize_mb)
