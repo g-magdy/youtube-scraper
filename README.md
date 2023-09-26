@@ -7,14 +7,11 @@ you can choose
 2 - Quality, resolution, or bitrate
 
 
-## Demo
-
-TODO: gif
-
 
 ## Installation
 
-TODO: make this an executable app to be downloaded
+just download the executable file and run it  
+you can trust me that it is not malware 😊
     
 ## Screenshots
 1
